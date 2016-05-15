@@ -17,7 +17,7 @@ if [ $command == install ]
 
     printf '%s\n' "Create semantic-ui theme config file @ node_modules/semantic-ui-less/theme.config"
 
-    echo '/* Reference the vue-spark app config file */
+    echo '/* Reference the websemantics/strong-together app config file */
 @import "resources/assets/less/semantic/theme.config";
 /* End Config */' > node_modules/semantic-ui-less/theme.config
 

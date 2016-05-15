@@ -1,18 +1,24 @@
 /*
-| Vue-Spark - A starter project to build a single page Vue.js app based
-|             on Browserify and Semantic-ui with Laravel Spark in mind.
-|  _________  __   __
-|  \  _____ \ \ \ / _  _ ___
-|   \ \    \ \ \ V | || / -_)  __  __    ________
-|    \ \    \ \ \_/ \_,_\___|  \_\ \_\   \  ____ \
-|     \ \    \ \    ___               _   \ \   \ \
-|      \ \    \ \  / __|_ __ __ _ _ _| |_  \ \   \ \
-|       \ \    \ \ \__ | '_ / _` | '_| / /  \ \   \ \
-|        \ \    \ \ \__| .__\__,_|_| |_\_\   \ \   \ \
-|         \ \____\ \___| |____________________\ \___\ \
-|          \______\ \--------------------------\ \_____\
-|                  \ \__________________________\ \
-|                   \______________________________\
+| Strong-Together - A starter project to build a single page Vue.js app based
+|                   on Browserify and Semantic-ui with Laravel Spark in mind.
+|
+|                                             /|
+|           _____________                ___/  |          _________
+|           \  _____\\\\  \            /  /  __|_____     \  _____ \
+|            \ \     \\\\  \          / /           /      \ \    \ \
+|             \ \     \\\\  \        //______     /         \ \    \ \
+|              \ \     \\\\  \      /  ///|     /            \ \    \ \
+|               \ \     \\\\  \    /  ////|   /               \ \    \ \
+|                \ \     \\\\  \  /  //// | /                  \ \    \ \
+|                 \ \_____\\\\  \/  ////________________________\ \____\ \
+|                  \_______\\\\    ////__________________________\ \______\
+|                           \\\\  ////                            \ \
+|                            \\\\////______________________________\ \
+|                             \\\///__________________________________\
+|           ____ ___ ____ ____ _  _ ____    ___ ____ ____ ____ ___ _  _ ____ ____
+|           [__   |  |__/ |  | |\ | | __     |  |  | | __ |___  |  |__| |___ |__/
+|           ___]  |  |  \ |__| | \| |__]     |  |__| |__] |___  |  |  | |___ |  \
+|
 |
 | This project was released under MIT license.
 |
@@ -36,25 +42,14 @@ require('./components/bootstrap')
 var app = new Vue({
   el: 'body',
 
-  /* The application's data */
+  /* Application data */
   data: {
 
   },
 
-  /*  The component has been created by Vue.js */
-  created() {},
-
-  /* Prepare the application */
+  /* Application is ready */
   ready() {
-    console.log('Application Ready.')
-
-    this.whenReady()
-  },
-
-  methods: {
-    /* Finish bootstrapping the application */
-    whenReady() {}
-
+    console.log('All Go ...')
   }
 
 })

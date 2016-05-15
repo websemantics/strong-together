@@ -1,15 +1,16 @@
 {
-  "name": "vue-spark",
+  "name": "strong-together",
   "version": "0.1.0",
   "description": "A starter project to build a single page Vue.js app based on Browserify and Semantic-ui with Laravel Spark in mind.",
   "author": "Adnan M.Sagar, PhD.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/websemantics/vue-spark.git"
+    "url": "git://github.com/websemantics/strong-together.git"
   },
   "scripts": {
     "postinstall" : "./scripts.sh install",
+    "build" : "gulp",
     "deploy" : "./scripts.sh deploy"
   },
   "devDependencies": {
