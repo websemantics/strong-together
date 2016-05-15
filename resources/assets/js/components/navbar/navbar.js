@@ -1,0 +1,4 @@
+
+Vue.component('navbar', {
+
+});

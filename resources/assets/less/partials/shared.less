@@ -1,0 +1,158 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body, html {
+    overflow: hidden;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight-thin;
+    background-color: @body-bg;
+    color: @text-color;
+    font-weight: @font-weight-thin;
+}
+
+
+
+
+/* document styles */
+body, h1, h2, h3, h4, h5, div, p, span, code {
+  font-family: 'Roboto', sans-serif;
+}
+
+label, body,
+.ui.divider
+.ui.form input,
+.ui.selection.dropdown
+.ui.input input:focus::-webkit-input-placeholder,
+.ui.input.focus input::-webkit-input-placeholder {
+  color:#7f8c8d!important;
+  font-weight:300;
+}
+
+body {
+  background: #7f8c8d;
+  font-size: 1.3rem;
+}
+
+.pusher {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #ecf0f1;
+}
+
+.hero {
+  overflow: hidden;
+  color: #ffffff;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img.logo {
+  width:120px;
+  float:left;
+}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table.center td {
+  text-align: center;
+}
+
+.container {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui.container .buttons {
+  display: inline;
+  padding-bottom: 20px;
+}
+
+/* content styles */
+.title-l{
+  font-size:4rem;
+}
+
+.title-m {
+  font-size:3rem;
+}
+
+.text-m {
+  font-size: 1.5rem;
+}
+
+.text-l {
+  font-size: 1.7rem;
+}
+
+/* text selection */
+::selection {
+  background-color: #e8e8e8 !important;
+}
+
+::-moz-selection {
+  background-color: #e8e8e8 !important;
+}
+
+/* footer styles */
+.ui.footer {
+  padding-bottom: 2rem;
+  background-color: #ecf0f1;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer h4 a {
+  font-size: 1.3rem;
+  color:#7f8c8d;
+}
+
+.footer h4 a:hover {
+  color:#788687;
+}
+
+.footer .tentacle {
+  vertical-align: baseline;
+}
+
+/* button */
+.ui.bragit.button,
+.ui.bragit.buttons .button {
+    background-color: #606b6c;
+    color: #fff!important;
+}
+
+.ui.bragit.label {
+    color: #606b6c!important;
+    border-color: #606b6c!important;
+    background-color: #ffffff;
+}
+
+.ui.bragit.button:focus,
+.ui.bragit.buttons .button:focus,
+.ui.bragit.button:hover,
+.ui.bragit.buttons .button:hover {
+    background-color: #485051;
+}
+
+.ui.bragit.labels .label:focus,
+.ui.bragit.label:focus,
+.ui.bragit.labels .label:hover,
+.ui.bragit.label:hover {
+    color: #485051!important;
+    border-color: #485051!important;
+}
+
+.ui.labeled .ui.button .star.icon {
+    color: #F5CC7A!important;
+}

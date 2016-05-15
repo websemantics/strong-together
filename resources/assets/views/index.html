@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" unselectable>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Vue Spark Starter Application</title>
+      <link href="/css/vendors.css" rel="stylesheet">
+      <link href="/css/app.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+          <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body class="stretched">
+     <section class="hero">
+      <div class="ui container">
+        <div class="ui grid">
+          <div class="two wide column">
+            <img class="logo" src="img/logo.svg"/>
+          </div>
+          <div class="fourteen wide column">
+            <h1 class="title-m">Audiz
+              <div class="buttons">
+                <a class="ui labeled tiny button github-websemantics-audiz-stars">
+                  <div class="ui bragit tiny button">
+                    <i class="star icon"></i> Stars
+                  </div>
+                  <div class="ui basic bragit left pointing label">
+                    <i class="spinner loading icon"></i>
+                  </div>
+                </a>
+                <a class="ui left labeled tiny button github-websemantics-audiz-forks">
+                  <div class="ui basic bragit right pointing label">
+                    <i class="spinner loading icon"></i>
+                  </div>
+                  <div class="ui bragit tiny button">
+                    <i class="fork icon"></i> Forks
+                  </div>
+                </a>
+                <a class="ui labeled tiny button github-websemantics-audiz-watchers">
+                  <div class="ui bragit tiny button">
+                    <i class="eye icon"></i> Watchers
+                  </div>
+                  <div class="ui basic bragit left pointing label">
+                    <i class="spinner loading icon"></i>
+                  </div>
+                </a>
+                <a class="ui left labeled tiny button github-websemantics-audiz-issues">
+                  <div class="ui basic bragit right pointing label">
+                    <i class="spinner loading icon"></i>
+                  </div>
+                  <div class="ui bragit tiny button">
+                    <i class="info circle icon"></i> Issues
+                  </div>
+                </a>
+                <a class="ui bragit tiny button github-websemantics-audiz-github">
+                    <i class="github icon"></i> Github
+                </a>
+              </div></h1>
+            <p class="text-l">Turns sound files into delightful videos to share on all social networks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pusher">
+      <div class="ui container">
+        <br/>
+        <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
+        <div>
+          <button class="ui button" onclick="document.getElementById('audioElement').play()">Play the Audio</button>
+          <button class="ui button" onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
+          <button class="ui button" onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+          <button class="ui button" onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+        </div>
+        <div id="audio"> </div>
+      </div>
+    </div>
+    <div class="ui footer">
+      <div class="ui container">
+        <table class="center">
+          <tr>
+            <td>
+              Built with <img data-preserve-html-node="true" src="img/heart.svg" alt="love" style="width:22px;height:22px;"> by &nbsp;<br/>
+              <h4><a href="http://websemantics.ca">Web Semantics, Inc.</a></h4>
+            </td>
+          </tr>
+        </table>
+      </div>
+  	</div>
+    <div id="app"></div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
