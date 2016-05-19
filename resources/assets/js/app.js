@@ -33,7 +33,7 @@ window.moment = require('moment')
 window.Promise = require('promise')
 window.Cookies = require('js-cookie')
 window.Vue = require('vue')
-window.$ = window.jQuery = require('jquery')
+window.$ = window.jQuery = (window.$ || window.jQuery) ? (window.$ || window.jQuery) : require('jquery')
 window.Bragit = require('bragit')
 
 require('bootstrap/dist/js/npm')
@@ -48,8 +48,21 @@ var app = new Vue({
   },
 
   /* Application is ready */
+
   ready() {
+
+    $('.masthead').visibility({
+        once: false,
+        onBottomPassed: function () {
+          $('.fixed.menu').transition('fade in')
+        },
+        onBottomPassedReverse: function () {
+          $('.fixed.menu').transition('fade out')
+        }
+      })
+
+    $('.ui.sidebar').sidebar('attach events', '.toc.item')
+
     console.log('All Go ...')
   }
-
 })

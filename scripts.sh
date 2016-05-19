@@ -19,7 +19,7 @@ if [ $command == install ]
 
     echo '/* Reference the websemantics/strong-together app config file */
 @import "resources/assets/less/semantic/theme.config";
-/* End Config */' > node_modules/semantic-ui-less/theme.config
+/* End Config */' > "$BASEDIR/node_modules/semantic-ui-less/theme.config"
 
     printf '%s\n' "All done, .."
 
