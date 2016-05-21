@@ -1,6 +1,0 @@
-Vue.component('home', {
-
-    ready() {
-
-    }
-});

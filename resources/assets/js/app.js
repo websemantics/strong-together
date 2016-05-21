@@ -27,42 +27,22 @@
 | @author    Adnan M.Sagar, PhD. <adnan@websemantics.ca>
 └ */
 
-window.URI = require('urijs')
-window._ = require('underscore')
-window.moment = require('moment')
-window.Promise = require('promise')
-window.Cookies = require('js-cookie')
-window.Vue = require('vue')
-window.$ = window.jQuery = (window.$ || window.jQuery) ? (window.$ || window.jQuery) : require('jquery')
-window.Bragit = require('bragit')
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Bragit from 'bragit'
+import App from './../vue/App.vue'
+import { configRouter } from './routes'
 
-require('bootstrap/dist/js/npm')
-require('./components/bootstrap')
+Vue.component('header-component', require('./../vue/components/Headerr.vue'))
+Vue.component('footer-component', require('./../vue/components/Footerr.vue'))
 
-var app = new Vue({
-  el: 'body',
+Vue.use(VueRouter)
 
-  /* Application data */
-  data: {
-
-  },
-
-  /* Application is ready */
-
-  ready() {
-
-    $('.masthead').visibility({
-        once: false,
-        onBottomPassed: function () {
-          $('.fixed.menu').transition('fade in')
-        },
-        onBottomPassedReverse: function () {
-          $('.fixed.menu').transition('fade out')
-        }
-      })
-
-    $('.ui.sidebar').sidebar('attach events', '.toc.item')
-
-    console.log('All Go ...')
-  }
+var router = new VueRouter({
+  history: true,
+  saveScrollPosition: true
 })
+
+configRouter(router);
+
+router.start(App, '#app')

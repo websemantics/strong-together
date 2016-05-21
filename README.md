@@ -29,7 +29,7 @@ and [Semantic-ui](http://semantic-ui.com/) with [Laravel Spark](https://spark.la
 
 ## Install
 
-Install all Node.js packages, and setup  `Semantic-Ui` for the project.
+Install all Node.js packages, and configure `Semantic-Ui` for the project.
 
 ``` bash
 # install dependencies
@@ -56,12 +56,11 @@ npm run deploy
 
 ## Change Theme
 
-To change current Semantic-ui theme edit `resources/assets/less/semantic/theme.config` and change per
-component.
+To change current Semantic-ui theme edit `resources/assets/less/semantic/theme.config` and modify per component.
 
 Example,
 
-```
+```js
 /* Elements */
 @button     : 'github';
 @container  : 'default';
@@ -73,4 +72,7 @@ Example,
 @input      : 'github';
 ```
 
-The above example changes the theme for the button and input elements to the predefined `github` theme.
+The above example changes the theme for the `button` and `input` elements to the predefined `github` theme.
+
+## Credits
+This project was inspired by [Browserify Vue-cli Template](https://github.com/vuejs-templates/browserify) and [Vue.js Starter Website](https://github.com/layer7be/vue-starter)

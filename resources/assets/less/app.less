@@ -1,4 +1,167 @@
-@import 'semantic/semantic';
-@import "partials/variables";
-@import "partials/spacing";
-@import "partials/shared";
+@import './semantic/semantic';
+@import "./vars";
+
+body, html {
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight-thin;
+    background-color: @body-bg;
+    font-weight: @font-weight-thin;
+}
+
+body, h1, h2, h3, h4, h5, div, p, span, code {
+  font-family: 'Roboto', sans-serif;
+  color: @text-color;
+}
+
+h2.subtitle {
+  color: @text-color-lite;
+}
+
+i.circular.icon {
+  background-color: @body-bg;
+  color: @text-color-lite;
+  box-shadow: none!important;
+}
+
+.ui.page.grid.segment {
+  padding-top: 8em;
+  padding-bottom: 26em;
+}
+
+.hidden.menu {
+  display: none;
+}
+
+.masthead.segment {
+  padding: 1em 0em;
+}
+
+.masthead.segment,
+.footer.segment {
+  background: @body-bg!important;
+}
+
+.footer.segment {
+    padding: 2em 0em!important;
+    font-size:16px;
+}
+
+.masthead img.logo {
+  width:24px;
+  vertical-align: inherit;
+}
+
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.masthead .ui.text.container {
+  padding-bottom: 2em;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.secondary.main.menu .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.main.menu .item,
+  .secondary.main.menu .menu {
+    display: none;
+  }
+  .secondary.main.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    border-bottom: none;
+  }
+
+  .masthead h1.ui.header {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .ui.vertical.stripe p {
+    font-size: 1.1em;
+  }
+}
+
+.ui.bragit.button,
+.ui.bragit.buttons .button {
+   background-color: #9e9e9e;
+   color: #fff!important;
+}
+
+.ui.bragit.label {
+   color: #9e9e9e!important;
+   border-color: #9e9e9e!important;
+   background-color: #ffffff;
+}
+
+.ui.bragit.button:focus,
+.ui.bragit.buttons .button:focus,
+.ui.bragit.button:hover,
+.ui.bragit.buttons .button:hover {
+   background-color: #848484;
+}
+
+.ui.bragit.labels .label:focus,
+.ui.bragit.label:focus,
+.ui.bragit.labels .label:hover,
+.ui.bragit.label:hover {
+   color: #848484!important;
+   border-color: #848484!important;
+}
+
+.ui.labeled .ui.button .star.icon {
+   color: #F5CC7A!important;
+}
