@@ -30,7 +30,7 @@
         </div>
       </form>
       <div class="ui message">
-        Already a user with us? <a v-link="{ path: 'auth/login' }">Login</a>
+        Already a user with us? <a v-link="{ path: '/auth/login' }">Login</a>
       </div>
     </div>
   </div>

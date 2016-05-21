@@ -7,10 +7,10 @@
       </a>
       <div class="right menu">
         <div class="item">
-          <a class="ui button" v-link="{ path: 'auth/login' }">Log in</a>
+          <a class="ui button" v-link="{ path: '/auth/login' }">Log in</a>
         </div>
         <div class="item">
-          <a class="ui primary button" v-link="{ path: 'auth/signup' }">Sign Up</a>
+          <a class="ui primary button" v-link="{ path: '/auth/signup' }">Sign Up</a>
         </div>
       </div>
     </div>
@@ -19,12 +19,12 @@
   <div class="ui vertical masthead center aligned basic segment">
     <div class="ui container">
       <div class="ui large secondary main menu">
-        <a v-for="link in links" class="item" href="{{ link.url}}">
+        <a v-for="link in links" class="item" v-link="{ path: link.url }"\>
            {{ link.title }}
         </a>
         <div class="right item">
-          <a class="ui button" v-link="{ path: 'auth/login' }">Log in</a>
-          <a class="ui primary button" v-link="{ path: 'auth/signup' }">Sign Up</a>
+          <a class="ui button" v-link="{ path: '/auth/login' }">Log in</a>
+          <a class="ui primary button" v-link="{ path: '/auth/signup' }">Sign Up</a>
         </div>
       </div>
     </div>
@@ -58,12 +58,12 @@ export default {
       links: [
         {
           title: 'Home',
-          url:'',
+          url:'/',
           active: true
         },
         {
           title: 'Missing',
-          url:'missing'
+          url:'/missing'
         }
       ]
     }

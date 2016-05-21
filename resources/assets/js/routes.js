@@ -14,7 +14,7 @@ module.exports = {
           }
         }
       },
-      '': {
+      '/': {
         component: require('./../vue/Home.vue'),
       },
       '*': {

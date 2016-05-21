@@ -40,7 +40,6 @@ Vue.component('footer-component', require('./../vue/components/Footer.vue'))
 Vue.use(VueRouter)
 
 var router = new VueRouter({
-  history: true,
   saveScrollPosition: true
 })
 
