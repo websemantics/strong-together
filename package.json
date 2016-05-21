@@ -1,7 +1,7 @@
 {
   "name": "strong-together",
   "version": "0.1.0",
-  "description": "A starter project to build a single page Vue.js app based on Browserify and Semantic-ui with Laravel Spark in mind.",
+  "description": "A starter project to build single page Vue.js apps as stand-alone or for Laravel / Laravel Spark projects; based on Browserify and Semantic-ui.",
   "author": "Adnan M.Sagar, PhD.",
   "license": "MIT",
   "repository": {

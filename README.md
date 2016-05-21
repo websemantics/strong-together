@@ -22,14 +22,17 @@
            [__   |  |__/ |  | |\ | | __     |  |  | | __ |___  |  |__| |___ |__/
            ___]  |  |  \ |__| | \| |__]     |  |__| |__] |___  |  |  | |___ |  \
 ```
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Build Status](https://travis-ci.org/websemantics/strong-together.svg?branch=master)](https://travis-ci.org/websemantics/strong-together)
 
->  A starter project to build a single page [Vue.js](https://vuejs.org) app based on [Browserify](http://browserify.org/)
-and [Semantic-ui](http://semantic-ui.com/) with [Laravel Spark](https://spark.laravel.com) in mind.
+
+>  A starter project to build single page [Vue.js](https://vuejs.org) apps as stand-alone or for [Laravel](https://laravel.com) / [Laravel Spark](https://spark.laravel.com) projects; based on [Browserify](http://browserify.org/)
+and [Semantic-ui](http://semantic-ui.com/).
+
+### [Demo](http://websemantics.github.io/strong-together)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/strong-together/issues)
 
 ## Install
 
-Install all Node.js packages, and configure `Semantic-Ui` for the project.
+Install all Node.js packages, and configure Semantic-ui for the project.
 
 ``` bash
 # install dependencies
@@ -54,9 +57,13 @@ This command will deploy this project to gh-pages if `.travis.yml` is setup.
 npm run deploy
 ```
 
-## Change Theme
+## Semantic-ui
 
-To change current Semantic-ui theme edit `resources/assets/less/semantic/theme.config` and modify per component.
+This project has been setup to work with Semantic-ui out-of-the-box. All the files required to add and modify styles are located at `resources/assets/less/semantic` folder.
+
+### Change Theme
+
+To change current Semantic-ui theme edit `resources/assets/less/semantic/theme.config` and modify per element.
 
 Example,
 
@@ -72,7 +79,23 @@ Example,
 @input      : 'github';
 ```
 
-The above example changes the theme for the `button` and `input` elements to the predefined `github` theme.
+The above example changes the theme for the `button` and `input` elements from `default` to the `github` theme.
+
+### Override Styles
+
+To override the default Semantic-ui styles, find the target components files here,  `resources/assets/less/semantic/site`.
+
+There are two files to control any Semantic-ui element styles for the selected theme ('default', 'github' etc). For `Button` element, we can either override the element 'less' variables,
+
+```
+strong-together/resources/assets/less/semantic/site/elements/button.variables
+```
+
+Or its styles directly,
+
+```
+strong-together/resources/assets/less/semantic/site/elements/button.overrides
+```
 
 ## Credits
 This project was inspired by [Browserify Vue-cli Template](https://github.com/vuejs-templates/browserify) and [Vue.js Starter Website](https://github.com/layer7be/vue-starter)

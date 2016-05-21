@@ -1,13 +1,3 @@
-<style>
-h2.ui.header {
-  font-size: xx-large;
-  margin-bottom: 3rem!important;
-}
-
-.ui.container {
-  font-size: large;
-}
-</style>
 <template>
     <div class="pusher">
       <header-component></header-component>

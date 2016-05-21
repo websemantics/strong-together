@@ -1,6 +1,7 @@
 /*
-| Strong-Together - A starter project to build a single page Vue.js app based
-|                   on Browserify and Semantic-ui with Laravel Spark in mind.
+| Strong-Together - A starter project to build single page Vue.js apps as
+|                   stand-alone or for Laravel / Laravel Spark projects;
+|                   based on Browserify and Semantic-ui.
 |
 |                                             /|
 |           _____________                ___/  |          _________
@@ -33,8 +34,8 @@ import Bragit from 'bragit'
 import App from './../vue/App.vue'
 import { configRouter } from './routes'
 
-Vue.component('header-component', require('./../vue/components/Headerr.vue'))
-Vue.component('footer-component', require('./../vue/components/Footerr.vue'))
+Vue.component('header-component', require('./../vue/components/Header.vue'))
+Vue.component('footer-component', require('./../vue/components/Footer.vue'))
 
 Vue.use(VueRouter)
 

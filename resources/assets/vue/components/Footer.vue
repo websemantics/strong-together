@@ -3,7 +3,7 @@
     <div class="ui container">
       <div class="ui stackable equal height stackable grid">
         <div class="twelve wide column">
-          Built with <i class="red heart icon"></i> by © {{ company }}.
+          Built with <i class="red heart icon"></i> by {{ company }}.
         </div>
         <div class="four wide column">
           <a v-for="site in social" class="ui icon button" href="{{ site.url}}">
