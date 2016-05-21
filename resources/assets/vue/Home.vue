@@ -31,3 +31,11 @@
       <footer-component></footer-component>
     </div>
 </template>
+<script>
+export default {
+  ready() {
+    /* Re-init Bragit buttons */
+    Bragit.init();
+  }
+}
+</script>

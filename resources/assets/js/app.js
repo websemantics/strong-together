@@ -1,6 +1,6 @@
 /*
 | Strong-Together - A starter project to build single page Vue.js apps as
-|                   stand-alone or for Laravel / Laravel Spark projects;
+|                   stand-alone or for Laravel / Laravel Spark projects
 |                   based on Browserify and Semantic-ui.
 |
 |                                             /|
@@ -43,6 +43,7 @@ var router = new VueRouter({
   saveScrollPosition: true
 })
 
-configRouter(router);
+window.Bragit = Bragit;
+configRouter(router)
 
 router.start(App, '#app')

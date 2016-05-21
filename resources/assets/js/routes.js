@@ -1,7 +1,5 @@
 module.exports = {
-
   configRouter: function (router) {
-
     router.map({
       'auth': {
         component: require('./../vue/Auth.vue'),
