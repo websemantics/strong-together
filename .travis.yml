@@ -1,7 +1,7 @@
 script: bash ./scripts.sh deploy
 language: node_js
 node_js:
-- '0.10'
+- '5'
 env:
   global:
   - GH_REF: github.com/websemantics/strong-together.gitnX/3vJ6IlPM4mdShXBqjrUeDaSR4csjCZUbjGGB3zZ9JxuOEWKN22vz6v6xVCG/t8tyOjlyiUmXkErXNyqU5rF16O7ribZX/elGxm28/yt1/zONzNCj5AE2mg655iGY4UrwVocMVXLi5p24XmXDUshSB2RGZc7gKLB/GGrQBWi7UTfB9kPa4RBcmH2t8QAAXhWrqkxPZ0y9+ieE0rZBqJQk3wF1a+aYsYlUuTd5J78MCQ297rCmWfz664mMPjxrr8CxitirhE/Wx0ncuUCcBMI2yY7J/O8tBytZNxtchzzJJQ6iUJvZ0fcVtiEh+6xDnoEBMCPKNdEJtsczqEi8soXqjUEdvpIdUqfLFcHO0TS85Q4mSIxsV8yXPHMiiS/0/4BgzgZtalI6a5C/rJZrcWGxho8Fy/H/9ZaKSJtI/iHCbJuQUQpUxQvJeMu7MFqzCx11HHFAJq/8O83FNUFgs1eY8x17gGYAS+a+K3DCchZjTE1+QLXTyM6LuGn7WicPk+xOMN1AmpM3w55NvGL38+oGf0uV53ZQZHjXSkG6yOITbUmE/HdQV05NyhfTEesextVaBo4V1De/jm5yml0NrqWmU7CD3FQUz+9/RXD2FppOjiwX3vY7799CcYkw=

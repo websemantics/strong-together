@@ -30,14 +30,16 @@ and [Semantic-ui](http://semantic-ui.com/).
 
 ### [Demo](http://websemantics.github.io/strong-together)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/strong-together/issues)
 
+
 ## Install
 
-Install all Node.js packages, and configure Semantic-ui for the project.
+Clone this repo and install all Node.js packages, and configure Semantic-ui for the project.
 
 ``` bash
 # install dependencies
 npm install
 ```
+
 
 ## Build
 
@@ -48,6 +50,7 @@ The build process will populate the `public` folder with javascript and css file
 npm run build
 ```
 
+
 ## Deploy
 
 This command will deploy this project to gh-pages if `.travis.yml` is setup.
@@ -57,11 +60,13 @@ This command will deploy this project to gh-pages if `.travis.yml` is setup.
 npm run deploy
 ```
 
+
 ## Semantic-ui
 
-This project has been setup to work with Semantic-ui out-of-the-box. All the files required to add and modify styles are located at `resources/assets/less/semantic` folder.
+This project has been setup to work with [Semantic-ui](http://semantic-ui.com) out-of-the-box. All the files required to modify the framework styles are located at `resources/assets/less/semantic` folder.
 
-### Change Theme
+
+#### Change Theme
 
 To change current Semantic-ui theme edit `resources/assets/less/semantic/theme.config` and modify per element.
 
@@ -79,23 +84,25 @@ Example,
 @input      : 'github';
 ```
 
-The above example changes the theme for the `button` and `input` elements from `default` to the `github` theme.
+The above example changes the theme for the `button` and `input` elements from `default` to the `github` theme. Run `gulp` to build the project and view the changes.
 
-### Override Styles
 
-To override the default Semantic-ui styles, find the target components files here,  `resources/assets/less/semantic/site`.
+#### Override Styles
 
-There are two files to control any Semantic-ui element styles for the selected theme ('default', 'github' etc). For `Button` element, we can either override the element 'less' variables,
+To override the default Semantic-ui styles, find the target elements files here,  `resources/assets/less/semantic/site`.
+
+There are two files to control any Semantic-ui element styles for the currently selected theme ('default', 'github' etc). For `Button` element, we can either override the element `less` variables,
 
 ```
 strong-together/resources/assets/less/semantic/site/elements/button.variables
 ```
 
-Or its styles directly,
+Or the element styles directly,
 
 ```
 strong-together/resources/assets/less/semantic/site/elements/button.overrides
 ```
+
 
 ## Credits
 This project was inspired by [Browserify Vue-cli Template](https://github.com/vuejs-templates/browserify) and [Vue.js Starter Website](https://github.com/layer7be/vue-starter)
