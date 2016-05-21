@@ -24,7 +24,7 @@
         </div>
       </form>
       <div class="ui message">
-        New to us? <a v-link="{ path: '/auth/signup' }">Sign Up</a>
+        New to us? <a v-link="{ path: 'auth/signup' }">Sign Up</a>
       </div>
     </div>
   </div>

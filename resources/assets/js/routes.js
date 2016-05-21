@@ -3,7 +3,7 @@ module.exports = {
   configRouter: function (router) {
 
     router.map({
-      '/auth': {
+      'auth': {
         component: require('./../vue/Auth.vue'),
         subRoutes: {
           '/login': {
@@ -14,7 +14,7 @@ module.exports = {
           }
         }
       },
-      '/': {
+      '': {
         component: require('./../vue/Home.vue'),
       },
       '*': {

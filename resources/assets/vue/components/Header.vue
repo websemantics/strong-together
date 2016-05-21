@@ -7,10 +7,10 @@
       </a>
       <div class="right menu">
         <div class="item">
-          <a class="ui button" v-link="{ path: '/auth/login' }">Log in</a>
+          <a class="ui button" v-link="{ path: 'auth/login' }">Log in</a>
         </div>
         <div class="item">
-          <a class="ui primary button" v-link="{ path: '/auth/signup' }">Sign Up</a>
+          <a class="ui primary button" v-link="{ path: 'auth/signup' }">Sign Up</a>
         </div>
       </div>
     </div>
@@ -23,8 +23,8 @@
            {{ link.title }}
         </a>
         <div class="right item">
-          <a class="ui button" v-link="{ path: '/auth/login' }">Log in</a>
-          <a class="ui primary button" v-link="{ path: '/auth/signup' }">Sign Up</a>
+          <a class="ui button" v-link="{ path: 'auth/login' }">Log in</a>
+          <a class="ui primary button" v-link="{ path: 'auth/signup' }">Sign Up</a>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
       links: [
         {
           title: 'Home',
-          url:'/',
+          url:'',
           active: true
         },
         {

@@ -9,7 +9,7 @@
           </h2>
           <div class="ui container center aligned">
             Oh dear, the page you requested is nowhere to be found!
-            Go back to the <a v-link="{ path: '/' }">Home Page</a> or just chill here for a bit.
+            Go back to the <a v-link="{ path: '' }">Home Page</a> or just chill here for a bit.
           </div>
         </div>
       </div>
