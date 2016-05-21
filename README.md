@@ -108,4 +108,4 @@ strong-together/resources/assets/less/semantic/site/elements/button.overrides
 
 
 ## Credits
-This project was inspired by [Browserify Vue-cli Template](https://github.com/vuejs-templates/browserify) and [Vue.js Starter Website](https://github.com/layer7be/vue-starter)
+This project was inspired by aspects of [Browserify Vue-cli Template](https://github.com/vuejs-templates/browserify) and [Vue.js Starter Website](https://github.com/layer7be/vue-starter).
