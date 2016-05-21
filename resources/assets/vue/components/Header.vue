@@ -30,7 +30,7 @@
     </div>
     <div v-if="masthead" class="ui text container">
       <h1 class="ui header title">
-        STRONG <img class="logo" src="/img/logo.svg"/> TOGETHER
+        STRONG <img class="logo" src="img/logo.svg"/> TOGETHER
       </h1>
       <div class="p-t-lg p-b-sm">
         <!-- Bragit : http://websemantics.github.io/bragit/ -->
