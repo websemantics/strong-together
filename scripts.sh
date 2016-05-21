@@ -33,8 +33,8 @@ elif [ $command == deploy ]
 		npm install
 		npm run build
 
-    # Create a new Git repo in pubic folder
-    cd "$BASEDIR/pubic"
+    # Create a new Git repo in public folder
+    cd "$BASEDIR/public"
     git init
 
     # Set user details

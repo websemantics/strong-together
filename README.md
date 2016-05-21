@@ -30,6 +30,7 @@ and [Semantic-ui](http://semantic-ui.com/).
 
 ### [Demo](http://websemantics.github.io/strong-together)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/strong-together/issues)
 
+[![image](https://raw.githubusercontent.com/websemantics/strong-together/gh-pages/img/screenshot.png)](http://websemantics.github.io/strong-together)
 
 ## Install
 
