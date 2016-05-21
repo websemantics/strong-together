@@ -30,10 +30,10 @@ elif [ $command == deploy ]
 		# (2) Deploy, the following bash will deploy this app to the repo gh-page
 		# ---------------------------------------------------------------------------
 
-    bower install
+    npm install
 
-    # Create a new Git repo in demo folder
-    cd "$BASEDIR/demo"
+    # Create a new Git repo in pubic folder
+    cd "$BASEDIR/pubic"
     git init
 
     # Set user details
