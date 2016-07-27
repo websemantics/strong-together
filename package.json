@@ -12,7 +12,7 @@
     "postinstall" : "./scripts.sh install",
     "build" : "gulp",
     "deploy" : "./scripts.sh deploy",
-    "watch": "nodemon -q -w './src/' '.' --exec 'npm run build' "
+    "watch": "nodemon -q -w './resources/' --ext '.' --exec 'npm run build' "
   },
   "dependencies": {
     "vue": "^1.0.0"

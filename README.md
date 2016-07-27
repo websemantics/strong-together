@@ -50,6 +50,14 @@ The build process will populate the `public` folder with javascript and css file
 npm run build
 ```
 
+## Development
+
+To support development run `watch` script to build when changes are made inside `resources` folder.
+
+``` bash
+# compile resources
+npm run watch
+```
 
 ## Deploy
 
