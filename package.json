@@ -11,7 +11,8 @@
   "scripts": {
     "postinstall" : "./scripts.sh install",
     "build" : "gulp",
-    "deploy" : "./scripts.sh deploy"
+    "deploy" : "./scripts.sh deploy",
+    "watch": "nodemon -q -w './src/' '.' --exec 'npm run build' "
   },
   "dependencies": {
     "vue": "^1.0.0"
@@ -24,6 +25,7 @@
     "jquery": "^2.1.4",
     "laravel-elixir": "^5.0.0",
     "laravel-elixir-vueify": "*",
-    "bragit": "*"
+    "bragit": "*",
+    "nodemon": "*"
   }
 }
