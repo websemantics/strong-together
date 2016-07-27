@@ -55,7 +55,7 @@ npm run build
 To support development run `watch` script to build when changes are made inside `resources` folder.
 
 ``` bash
-# compile resources
+# compile resources when changes made
 npm run watch
 ```
 
