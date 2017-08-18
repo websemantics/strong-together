@@ -15,17 +15,21 @@
     "watch": "nodemon -q -w './resources/' --ext '.' --exec 'npm run build' "
   },
   "dependencies": {
-    "vue": "^1.0.0"
+    "bragit": "^1.0.6",
+    "vue": "^1.0.0",
+    "vue-resource": "^0.7.0",
+    "vue-router": "^0.7.13",
+    "base-64": "^0.1.0",
+    "gitters": "^1.0.6",
+    "larder": "^1.0.2"
   },
   "devDependencies": {
-    "vue-router": "*",
-    "vue-resource": "^0.7.0",
     "gulp": "^3.8.8",
-    "semantic-ui-less": "*",
     "jquery": "^2.1.4",
-    "laravel-elixir": "^5.0.0",
-    "laravel-elixir-vueify": "*",
-    "bragit": "*",
-    "nodemon": "*"
+    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-browserify-official": "^0.1.3",
+    "laravel-elixir-vueify": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "semantic-ui-less": "^2.2.12"
   }
 }
