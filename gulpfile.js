@@ -1,6 +1,7 @@
 process.env.DISABLE_NOTIFIER = true
 
 var elixir = require('laravel-elixir')
+             require('laravel-elixir-browserify-official')
              require('laravel-elixir-vueify');
 
     elixir.config.sourcemaps = false;

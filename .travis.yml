@@ -1,7 +1,7 @@
 script: bash ./scripts.sh deploy
 language: node_js
 node_js:
-- '5'
+- '6'
 env:
   global:
   - GH_REF: github.com/websemantics/strong-together.git
